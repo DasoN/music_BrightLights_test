@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  type='text/css'>   
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_nav">
+            <img src="./assets/logo.png" alt="logo" id="logo">
+            <ul class="header_nav__items">
+                <li class="header_nav__items_item"><a href="">About</a></li>
+                <li class="header_nav__items_item"><a 
+                href="">News</a></li>
+                <li class="header_nav__items_item"><a href="">Music</a></li>
+                <li class="header_nav__items_item"><a href="">Media</a></li>
+                <li class="header_nav__items_item"><a href="">Tours</a></li>
+                <li class="header_nav__items_item"><a href="">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="header_content wrapper">
+            <h2>New Single</h2>
+            <h3>War For Love</h3>
+            
+            <div class="track_block tracker">
+                <button onclick="playSong()"><i></i></button>
+                <input type="range" min="0" max="100" value="10" class="sound_range styled-slider slider-progress" onchange="change_duration()">
+                <div class="tracker"><div class="time"></div></div>
+            </div>
+        </div>
+
+        <ul class="header_cards">
+            <li class="header_cards__card">
+                <span class="cover-block">Working on my upcoming full-lenth
+                    album that`s releasing later this year.</span>
+            </li>
+            <li class="header_cards__card">
+                <span class="cover-block">Halloween vibes. 
+                    Listen my new track!</span>
+            </li>
+            <li class="header_cards__card">
+                <span class="cover-block">WarForLove is OUT NOW!! 
+                    Stream it here!</span>
+            </li>
+        </ul>
+    
+    </header>
+    
+    <main class="main wrapper" >
+      <section class="section_about-us">
+        <div class="section_about-us__description">
+            <h3><img src="./assets/icons/icon-music.png" alt="">Bright Lights</h3>
+            <span>Bright Lights is a multi-Grammy nominated singer, songwriter, DJ and record producer. She has written for numerous 
+
+                pop stars including Britney Spears, Justin Bieber, Usher and Beyoncé. Her catalog has amassed over 1 billion streams worldwide. More than 100 million of those streams can be attributed to her artist career and include such hits as Porter Robinson's "Language," 3LAU's "How You Love Me" and her own single "Runaway." She was also a featured vocalist on Zedd's #1 Clarity album. Her latest music video, "Put It Down," reached 1 million streams in the first week, releasing independently. Bright Lights is currently in the studio working on a self-produced album slated for release in 2020. </span>
+                <ul>
+                    <li>
+                        <img src="./assets/icons/Rectangle.png" alt="">
+                        <span>Based in: Los Angeles</span>
+                    </li>
+                    <li>
+                        <img src="./assets/icons/Rectangle.png" alt="">
+                        <span>Genre: #DancePop </span>
+                    </li>
+                    <li>
+                        <img src="./assets/icons/Rectangle.png" alt="">
+                        <span>Founded in 2011</span>
+                    </li>
+                    <li>
+                        <img src="./assets/icons/Rectangle.png" alt="">
+                        <span>Label: 333 Recordings</span>
+                    </li>
+                </ul>
+        </div>
+        <div class="">
+            <img src="./assets/section-image.png" alt="">
+        </div>
+      </section>  
+
+      <section class="section_comment">
+          <div class="section_comment__text">
+            <span>“In an age where mainstream music is designed to be as
+                easily consumed as possible, listening to Bright Lights is
+                refreshing, to say the least. Her sound is perfect for radio
+                but complex enough to separate her from other pop newcomers.”</span>
+                <hr>
+                <a href="https://PopULove.net" class="link">PopULove.net</a>
+          </div>
+          <div><img src="./assets/comment-img.png" alt=""></div>
+      </section>
+
+      <section class="section_tracks wrapper">
+          <div class="section_tracks__music-image">
+            <img src="./assets/tracks-img.png" alt="">
+          </div>
+          <div class="section_tracks__last-tracks">
+            <h3><img src="./assets/icons/icon-music.png" alt="">Last tracks</h3>
+            <div class="track">
+                <div class="track_block tracker">
+                    <button onclick="playSong()"><i></i></button>
+                    <input type="range" min="0" max="100" value="10" class="sound_range styled-slider slider-progress" onchange="change_duration()">
+                    <div class="time"></div>
+                </div>
+            </div>
+            <ol class="list">
+                <li class="list-track"><p>01</p>3LAU, Bright Lights — How You Love Me</li>
+                <li class="list-track"><p>02</p>Bright Lights, Kaleena Zanders, Kandy — War For Love
+                </li>
+                <li class="list-track"><p>03</p>Pink Is Punk, Benny Benassi, Bright Lights — Ghost</li>
+                <li class="list-track"><p>04</p>Hardwell, Dyro, Bright Lights — Never Say Goodbye</li>
+                <li class="list-track"><p>05</p>Zeds Dead, Dirtyphonics, Bright Lights — Where Are You Now</li>
+                <li class="list-track"><p>06</p>Zedd, Bright Lights — Follow You Down
+                </li>
+            </ol>
+            <div class="followers">
+                <span>Follow me:</span>
+                <ul>
+                    <li><img src="./assets/spotify.png" alt=""></li>
+                    <li><img src="./assets/iTunes.png" alt=""></li>
+                </ul>
+            </div>
+          </div>
+      </section>
+
+      <section class="section_gallery">
+        <img src="./assets/gallery/1 image.png" alt="" class="image-1">
+        <img src="./assets/gallery/2 image.png" alt="" class="image-2"> 
+        <img src="./assets/gallery/3 image.png" alt="" class="image-3">
+        <img src="./assets/gallery/4 image.png" alt="" class="image-4">
+        <img src="./assets/gallery/5 image.png" alt="" class="image-5">
+      </section>
+
+      <section class="section_slider-events">
+          <div class="section_slider-events__left-slider">
+              <img src="./assets/slider/left-slider.png" alt="">
+          </div>
+          <div class="section_slider-events__cards">
+            <div class="section_slider-events__cards_card">
+                <img src="./assets/slider/1 slide.png" alt="">
+                <div class="content">
+                    <span>Chandler, AZ</span>
+                    <p>The Park at Wild Horse Pass</p>
+                </div>
+                <form action="">
+                    <div><span>Apr 02 2021</span></div>
+                    <button>tickets</button>
+                </form>
+            </div>
+            <div class="section_slider-events__cards_card">
+                <img src="./assets/slider/2 slide.png" alt="">
+                <div class="content">
+                    <span>Ibiza, IBZ</span>
+                    <p>Swag Ibiza Club</p>
+                </div>
+                <form action="">
+                    <div><span>Jul 08 2021</span></div>
+                    <button>tickets</button>
+                </form>
+            </div>
+            <div class="section_slider-events__cards_card">
+                <img src="./assets/slider/3 slide.png" alt="">
+                <div class="content">
+                    <span>Ibiza, IBZ</span>
+                    <p>El Swing Ibiza</p>
+                </div>
+                <form action="">
+                    <div><span>Jul 10 2021</span></div>
+                    <button>tickets</button>
+                </form>
+            </div>
+          </div>
+          <div class="section_slider-events__right-slider">
+              <img src="./assets/slider/right-slider.png" alt="">
+          </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <img src="./assets/logo.png" alt="logo">
+        <div class="footer_info">
+                <ul class="footer_info_keys">
+                    <li>
+                        Artist Management:
+                    </li>
+                    <li>
+                        EMAIL:
+                    </li>
+                </ul>
+                <ul class="footer_info_resp">
+                    <li>
+                        Jake Henny
+                    </li>
+                    <li>
+                        jake@brightlightsofficial.com
+                    </li>
+                </ul>
+        </div>
+        <div class="footer_icons">
+            <img src="./assets/footer_icons/Group 35.png" alt="">
+            <img src="./assets/footer_icons/Group 36.png" alt="">
+            <img src="./assets/footer_icons/Group 37.png" alt="">
+            <img src="./assets/footer_icons/Group 38.png" alt="">
+            <img src="./assets/footer_icons/Group 39.png" alt= "">
+            <img src="./assets/footer_icons/Group 40.png" alt="">
+        </div>
+        <p>©  2020 DJ bright lights.</p>
+    </footer>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

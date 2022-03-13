@@ -1,0 +1,174 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/background_header.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100% !important;
+    position: relative;
+
+    &_nav{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        &__items{
+            display: flex;
+            align-items: center;
+            gap: 56px;
+            margin-left: 65px;
+
+            &_item > a{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+                color: $text_color;
+                text-decoration: none;
+
+                &:hover{
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
+
+    &_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+        margin-top: 322px;
+
+        h2{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 72px;
+            color: $text_color;
+        }
+
+        h3{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 100px;
+            line-height: 150px;
+            color: rgba(255, 255, 255, 0);
+            -webkit-text-stroke: 1px $text_color;
+        }
+
+        img{
+            margin-top: 10px; 
+            width: 65%;
+        }
+
+        .tracker{
+            margin-top: 50px;
+        }
+
+    }
+
+    &_cards{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 129px;
+        margin-bottom: 179px;
+        
+
+        &__card{
+            width: 350px;
+            height: 300px;
+            border-radius: 20px 0 20px 0;
+            background-image: url('../assets/bg-block.png');
+            position: relative;
+
+            .cover-block{
+                position: absolute;
+                width: 100%;
+                height: 30%;
+                bottom: 0;
+                right: 0;
+                background: $color_defult;
+                padding: 21px 20px;
+                border-radius: 0 0 20px 0;
+                opacity: 70%;
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: $text_color;
+            }
+        }
+    }
+
+}
+
+// media-queries HERE!!
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .header{
+      &_nav{
+        flex-direction: column;
+
+        #logo{
+            margin: 0 auto;
+            width: 223px;
+            height: 60px;
+        }
+
+        &__items{
+            justify-content: center;
+            margin-top: 16px;
+        }
+      }
+
+      &_content{
+          .tracker{
+          }
+      }
+
+      &_cards{
+          flex-direction: column;
+          align-items: center;
+      }
+  }
+}
+
+@media screen and (max-width: 767px){
+    .header{
+        &_nav{
+          flex-direction: column;
+  
+          #logo{
+              margin: 0 auto;
+              width: 223px;
+              height: 60px;
+          }
+  
+          &__items{
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              margin-top: 16px;
+          }
+        }
+
+        &_content{
+            margin-top: 60px;
+              
+        }
+  
+        &_cards{
+            margin-top: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

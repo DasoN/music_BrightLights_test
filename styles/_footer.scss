@@ -1,0 +1,55 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 60px;
+
+    &_info{
+        display: flex;
+        column-gap: 30px;
+
+        &_keys{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: right;
+            text-transform: uppercase;
+            color: $text_color;
+
+            text-align: right;
+        }
+
+        &_resp{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: uppercase;
+            color: $text_color;
+
+            text-align: left;
+        }
+    }
+
+    &_icons{
+        display: flex;
+        column-gap: 30px;
+    }
+    
+    p{
+        margin: 40px 0;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 19px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $text_color;
+        opacity: 0.5;
+    }
+}

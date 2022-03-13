@@ -1,0 +1,36 @@
+@import '_var';
+@import '_header';
+@import '_main';
+@import '_footer';
+
+@import '_range';
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: $backgroud;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    width: 1110px !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .wrapper{
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .wrapper{
+        padding: 0 20px;
+    }
+}
